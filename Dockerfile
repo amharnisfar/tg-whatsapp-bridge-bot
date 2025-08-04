@@ -61,4 +61,4 @@ RUN npm ci --only=production
 COPY . .
 
 # 7. Command to run the application (e.g., 'wa.js')
-CMD ["node", "bot.js"]
+CMD ["node", "wa.js"]
