@@ -9,7 +9,7 @@
 <div style="width: 100%; max-width: 900px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; box-sizing: border-box;">
 <h1 style="font-size: 24px; margin: 10px 0;">
 <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram Logo" valign="middle" style="width: 40px; height: 40px;">
-WhatsApp-Telegram Bridge Bot
+WhatsApp-Telegram Bridge Bot - By Amhar Nisfer
 <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Logo" valign="middle" style="width: 40px; height: 40px;">
 </h1>
 <p>This project provides a powerful and easy-to-use bot that acts as a bridge between your WhatsApp account and Telegram. It allows you to receive all your WhatsApp messages directly in a Telegram chat and reply to them seamlessly. You can also initiate new conversations with any WhatsApp contact directly from Telegram.</p>
