@@ -3,15 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-p, li, pre {
-word-wrap: break-word;
-overflow-wrap: break-word;
-}
-pre {
-white-space: pre-wrap;
-}
-</style>
+
 </head>
 <body bgcolor="#FFFFFF">
 <div style="width: 100%; max-width: 900px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; box-sizing: border-box;">
