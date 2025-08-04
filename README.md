@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp-Telegram Bridge Bot README</title>
 </head>
 <body bgcolor="#FFFFFF">
-<table width="900" align="center" border="1" cellpadding="20" cellspacing="0" bordercolor="#DDDDDD" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
+<table width="900" align="center" border="0" cellpadding="20" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
 <tr>
 <td>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -148,7 +147,7 @@ CMD ["node", "wa.js"]
 </code></pre></td></tr></table>
 
 <hr>
-<p align="center">
+<p align="right">
 <font size="-1" color="#666666">
 &copy; 2025 Amhar Nisfer Dev, Inc
 </font>
