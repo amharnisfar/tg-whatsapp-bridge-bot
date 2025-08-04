@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body bgcolor="#FFFFFF">
-<table width="900" align="left" border="0" cellpadding="20" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
+<table width="100%" align="left" border="0" cellpadding="20" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
 <tr>
 <td>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -64,17 +64,17 @@ WhatsApp-Telegram Bridge Bot
 <ol>
 <li><strong>Install Docker</strong>: Ensure Docker is installed on your system.</li>
 <li><strong>Build the Docker Image</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker build -t whatsapp-telegram-bridge .</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker build -t whatsapp-telegram-bridge .</code></pre></td></tr></table>
 </li>
 <li><strong>Run the Docker Container</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker run -d --name wa-bridge --restart unless-stopped -v wwebjs_auth:/app/.wwebjs_auth whatsapp-telegram-bridge</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker run -d --name wa-bridge --restart unless-stopped -v wwebjs_auth:/app/.wwebjs_auth whatsapp-telegram-bridge</code></pre></td></tr></table>
 </li>
 <li><strong>Check Logs (Optional)</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker logs -f wa-bridge</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>docker logs -f wa-bridge</code></pre></td></tr></table>
 </li>
 </ol>
 <h3><u>Method 2: Local Run on Linux (Debian/Ubuntu)</u></h3>
-<table width="100%" border="1" cellpadding="15" cellspacing="0" bordercolor="#ffeeba" bgcolor="#fff3cd" style="border-radius: 5px;">
+<table width="100%" cellpadding="15" cellspacing="0" bgcolor="#fff3cd" style="border-radius: 5px;">
 <tr><td><font color="#856404">
 <strong>Important for Servers/Headless Systems:</strong> The following dependencies are crucial for running Chrome in a headless environment.
 </font></td></tr>
@@ -83,23 +83,23 @@ WhatsApp-Telegram Bridge Bot
 <ol>
 <li><strong>Install Node.js</strong>: Ensure Node.js v18 or newer is installed.</li>
 <li><strong>Install System Dependencies</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 12px; margin: 0;"><code>sudo apt-get update && sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget libgbm-dev libdrm2 --no-install-recommends</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 12px; margin: 0;"><code>sudo apt-get update && sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget libgbm-dev libdrm2 --no-install-recommends</code></pre></td></tr></table>
 </li>
 <li><strong>Install Node Modules</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>npm install</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>npm install</code></pre></td></tr></table>
 </li>
 <li><strong>Run the Bot</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>node wa.js</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>node wa.js</code></pre></td></tr></table>
 </li>
 </ol>
 <h3><u>Method 3: Local Run on Windows</u></h3>
 <ol>
 <li><strong>Install Node.js</strong>: Download and install Node.js v18+ from the <a href="https://nodejs.org/" target="_blank">official website</a>.</li>
 <li><strong>Install Node Modules</strong>: Navigate to the project directory in PowerShell or CMD and run:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>npm install</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>npm install</code></pre></td></tr></table>
 </li>
 <li><strong>Run the Bot</strong>:
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>node wa.js</code></pre></td></tr></table>
+<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 14px; margin: 0;"><code>node wa.js</code></pre></td></tr></table>
 </li>
 </ol>
 <hr>
