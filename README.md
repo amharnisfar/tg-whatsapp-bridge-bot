@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body bgcolor="#FFFFFF">
-<table width="900" align="center" border="0" cellpadding="20" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
+<table width="900" align="left" border="0" cellpadding="20" cellspacing="0" style="font-family: Helvetica, Arial, sans-serif; line-height: 1.6; border-collapse: collapse;">
 <tr>
 <td>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td align="center">
+<td align="left">
 <h1 style="font-size: 24px; margin: 10px 0;">
 <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram Logo" valign="middle">
 WhatsApp-Telegram Bridge Bot
@@ -20,15 +19,15 @@ WhatsApp-Telegram Bridge Bot
 </td>
 </tr>
 <tr>
-<td align="center">
-<p>This project provides a powerful and easy-to-use bot that acts as a bridge between your WhatsApp account and Telegram. It allows you to receive all your WhatsApp messages directly in a Telegram chat and reply to them seamlessly. You can also initiate new conversations with any WhatsApp contact directly from Telegram.</p>
+<td align="left">
+<p style="word-wrap: break-word;">This project provides a powerful and easy-to-use bot that acts as a bridge between your WhatsApp account and Telegram. It allows you to receive all your WhatsApp messages directly in a Telegram chat and reply to them seamlessly. You can also initiate new conversations with any WhatsApp contact directly from Telegram.</p>
 <!-- Button -->
 <table border="0" cellspacing="0" cellpadding="12" style="margin-top: 15px; margin-bottom: 15px;">
 <tr>
 <td bgcolor="#0088CC" style="border-radius: 5px;">
 <a href="https://t.me/aharwhatsappbot" target="_blank" style="text-decoration: none;">
 <font color="#FFFFFF" face="Helvetica, Arial, sans-serif" size="4">
-<b>&nbsp;Try a Sample Bot&nbsp;</b>
+<b> Try a Sample Bot </b>
 </font>
 </a>
 </td>
@@ -38,8 +37,8 @@ WhatsApp-Telegram Bridge Bot
 </tr>
 </table>
 <hr>
-<h2>&#10024; Features</h2>
-<ul>
+<h2>✨ Features</h2>
+<ul style="word-wrap: break-word;">
 <li><b>Multi-User Support</b>: Each Telegram user connects their own independent WhatsApp account.</li>
 <li><b>Message Forwarding</b>: Forwards incoming WhatsApp messages (including text, images, and captions) to your Telegram chat.</li>
 <li><b>Direct Replies</b>: Simply use Telegram's reply feature to send a message back to the original WhatsApp chat.</li>
@@ -50,18 +49,18 @@ WhatsApp-Telegram Bridge Bot
 <li><b>Dockerized</b>: Comes with a fully configured Dockerfile for easy, dependency-free deployment.</li>
 </ul>
 <hr>
-<h2>&#9881;&#65039; How It Works</h2>
-<p>The bot is built on Node.js and orchestrates two main libraries:</p>
+<h2>⚙️ How It Works</h2>
+<p style="word-wrap: break-word;">The bot is built on Node.js and orchestrates two main libraries:</p>
 <ol>
 <li><strong><code>whatsapp-web.js</code></strong>: A powerful library that runs a headless instance of Chrome to automate WhatsApp Web, providing an API to send and receive messages.</li>
 <li><strong><code>node-telegram-bot-api</code></strong>: A straightforward library to interact with the Telegram Bot API, used for handling commands and relaying messages.</li>
 </ol>
-<p>When you start the bot and use the <code>/scan</code> command, it initializes a new <code>whatsapp-web.js</code> client for your chat ID. This client generates a QR code, which is sent to you via the Telegram bot. Once you scan it, the client is authenticated and starts listening for incoming WhatsApp messages, forwarding them to you. Replying in Telegram triggers the bot to send your message back through the corresponding WhatsApp client.</p>
+<p style="word-wrap: break-word;">When you start the bot and use the <code>/scan</code> command, it initializes a new <code>whatsapp-web.js</code> client for your chat ID. This client generates a QR code, which is sent to you via the Telegram bot. Once you scan it, the client is authenticated and starts listening for incoming WhatsApp messages, forwarding them to you. Replying in Telegram triggers the bot to send your message back through the corresponding WhatsApp client.</p>
 <hr>
-<h2>&#128640; Installation &amp; Setup</h2>
-<p>You can run the bot either locally or using Docker. First, get a <strong>Telegram Bot Token</strong> from <a href="https://t.me/BotFather" target="_blank">BotFather</a>. Then, paste the provided code into a file named <code>wa.js</code> and replace <code>&lt;BOT_TOKEN_HERE&gt;</code> with your token.</p>
+<h2> Installation & Setup</h2>
+<p style="word-wrap: break-word;">You can run the bot either locally or using Docker. First, get a <strong>Telegram Bot Token</strong> from <a href="https://t.me/BotFather" target="_blank">BotFather</a>. Then, paste the provided code into a file named <code>wa.js</code> and replace <code><BOT_TOKEN_HERE></code> with your token.</p>
 <h3><u>Method 1: Running with Docker (Recommended)</u></h3>
-<p>This method handles all system dependencies automatically.</p>
+<p style="word-wrap: break-word;">This method handles all system dependencies automatically.</p>
 <ol>
 <li><strong>Install Docker</strong>: Ensure Docker is installed on your system.</li>
 <li><strong>Build the Docker Image</strong>:
@@ -104,52 +103,21 @@ WhatsApp-Telegram Bridge Bot
 </li>
 </ol>
 <hr>
-<h2>&#129302; Bot Commands &amp; Usage</h2>
+<h2>烙 Bot Commands & Usage</h2>
 <ul>
 <li><code>/start</code>: Displays the welcome message.</li>
 <li><code>/scan</code>: Generates a QR code to link your WhatsApp account.</li>
-<li><code>/send &lt;number&gt;</code>: Initiates sending a message (e.g., <code>/send +1234567890</code>).</li>
+<li><code>/send <number></code>: Initiates sending a message (e.g., <code>/send +1234567890</code>).</li>
 <li><code>/cancel</code>: Aborts the <code>/send</code> process.</li>
 <li><code>/logout</code>: Disconnects your WhatsApp account.</li>
 <li><code>/help</code>: Shows the help message.</li>
 </ul>
 <h3>Replying to Messages</h3>
-<p>When a WhatsApp message is forwarded to you, use Telegram's native <strong>'Reply'</strong> feature on that message. Your response will be sent back to the correct WhatsApp chat.</p>
-<hr>
-<h2>&#128462;&#65039; Dockerfile Explained</h2>
-<p>The provided <code>Dockerfile</code> creates an optimized and stable environment for the bot.</p>
-<table width="100%" bgcolor="#f6f8fa" cellpadding="10" style="border: 1px solid #ddd; border-radius: 5px;"><tr><td><pre style="white-space: pre-wrap; word-wrap: break-word; font-size: 13px; margin: 0;"><code># Use an official Node.js 18 image
-FROM node:18-bullseye
-
-Install all necessary system dependencies for headless Chrome
-
-RUN apt-get update && apt-get install -y
-gconf-service libasound2 ... libgbm-dev libdrm2
---no-install-recommends
-&& rm -rf /var/lib/apt/lists/*
-
-Set the working directory inside the container
-
-WORKDIR /app
-
-Copy package files and install dependencies securely
-
-COPY package*.json ./
-RUN npm ci --only=production
-
-Copy the rest of the application code
-
-COPY . .
-
-Define the command to run the application
-
-CMD ["node", "wa.js"]
-</code></pre></td></tr></table>
-
+<p style="word-wrap: break-word;">When a WhatsApp message is forwarded to you, use Telegram's native <strong>'Reply'</strong> feature on that message. Your response will be sent back to the correct WhatsApp chat.</p>
 <hr>
 <p align="right">
 <font size="-1" color="#666666">
-&copy; 2025 Amhar Nisfer Dev, Inc
+© 2025 Amhar Nisfer Dev, Inc
 </font>
 </p>
 </td>
